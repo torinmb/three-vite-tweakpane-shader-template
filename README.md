@@ -2,7 +2,7 @@
 
 # A template to quickly prototype full-screen shaders with UI using Tweakpane, Three.js and Vite 🎉
 
-
+[Live Demo](https://three-vite-tweakpane-shader-template.netlify.app/)
 
 Define your uniforms 1 time in [state.js](./js/state.js) and use them in both the shader and the UI without needing to update them in your render loop.
 
