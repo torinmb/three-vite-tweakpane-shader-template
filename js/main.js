@@ -30,6 +30,7 @@ geometry.setAttribute( 'position', new BufferAttribute( vertices, 3 ) );
 geometry.computeVertexNormals();
 
 let material = makeShaderMaterial(vertexShader, gradientFragment, params);
+
 let mesh = createMeshWithUniforms(geometry, material, () => {
     // this function runs every frame.
     // make sure to return a pointer to the uniform object so we can update it externally.
@@ -51,7 +52,8 @@ camera.position.z = 1;
 let onWindowResize = () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    params.resolution.set(window.innerWidth * window.devicePixelRatio, window.innerHeight * window.devicePixelRatio);
+
+    params.resolution.set(window.innerWidth , window.innerHeight );
     renderer.setSize( window.innerWidth, window.innerHeight );
 }
   

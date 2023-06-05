@@ -15,8 +15,14 @@ export const initUI = () => {
     f1.addInput(params, 'color', {
         color: {type: 'float'},
     });
+
     f1.addInput(params, 'scale', {
         min: -2.0,
         max: 2,
+    });
+    
+    f1.addInput(params, 'offset', {
+        min: .01,
+        max: .2,
     });
 }
